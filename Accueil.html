@@ -1,47 +1,200 @@
-<!DOCTYPE html>
 <html lang="fr">
 <head>
-    <meta charset="UTF-8">
-    <title>Title</title>
-  <link rel="stylesheet" href="assets/css/style.css">
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Accueil</title>
+    <link
+            rel="stylesheet"
+            href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
+            integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w=="
+            crossorigin="anonymous"
+            referrerpolicy="no-referrer"
+    />
+    <link rel="stylesheet" href="assets/css/style.css" />
 </head>
 <body>
-<!--footer-->
-<footer class="footer">
-  <div class="footer-content">
-    <!-- Colonne 1 -->
-    <div class="footer-section">
-      <h3>À propos</h3>
-      <p>Fine équipe de 2 étudiants de l'IUT Rives-De-Seine en BUT 1 Informatique</p>
+<nav class="navbar">
+    <div class="navbar-container container">
+        <input type="checkbox" name="" id="">
+        <div class="hamburger-lines">
+            <span class="line line1"></span>
+            <span class="line line2"></span>
+            <span class="line line3"></span>
+        </div>
+        <ul class="menu-items">
+            <li><a href="Accueil.html">Accueil</a></li>
+            <li><a href="assets/pages_HTML/Tutoriel.html">Tutoriel</a></li>
+            <li><a href="assets/pages_HTML/Personnalisation.html">Personnalisation</a></li>
+            <li><a href="assets/pages_HTML/Contact.html">Contact</a></li>
+        </ul>
+        <h1 class="logo">MS</h1>
     </div>
-
-
-    <!-- Colonne 2 -->
-    <div class="footer-section">
-      <h3>Contact</h3>
-      <p>
-        Email du professeur: laurent.giustignano@u-paris.fr<br>
-        Adresse: 143 avenue de Versailles, 75016 Paris
-      </p>
+</nav>
+<section class="showcase-area" id="showcase">
+    <div class="showcase-container">
+        <h1 class="main-title" id="home">Accueil</h1>
+        <p>La page principale</p>
+        <a href="#food-menu" class="btn btn-primary">Menu</a>
     </div>
+</section>
 
-    <!-- Colonne 3 -->
-    <div class="footer-section">
-      <h3>Suivez-nous</h3>
-      <div class="lien-sociaux">
-        <a href="https://github.com/Crcos/SAE_S1-03"> <img src="assets/images/icons/github_img.png" class="footer-github" alt="Github logo"> </a>
-        <a href="https://u-paris.fr/"><img src="assets/images/icons/IUT-logo.png" class="footer-IUT" alt="logo IUT Paris Cité"> </a>
-        <a href=""><i class="fab fa-twitter"></i></a>
-
-      </div>
+<section id="about">
+    <div class="about-wrapper container">
+        <div class="about-text">
+            <p class="small">About Us</p>
+            <h2>We've beem making healthy food last for 10 years</h2>
+            <p>
+                Lorem, ipsum dolor sit amet consectetur adipisicing elit. Esse ab
+                eos omnis, nobis dignissimos perferendis et officia architecto,
+                fugiat possimus eaque qui ullam excepturi suscipit aliquid optio,
+                maiores praesentium soluta alias asperiores saepe commodi
+                consequatur? Perferendis est placeat facere aspernatur!
+            </p>
+        </div>
+        <div class="about-img">
+            <img src="https://i.postimg.cc/mgpwzmx9/about-photo.jpg" alt="food" />
+        </div>
     </div>
-  </div>
-  <a href="#" class="back-to-top">↑ Remonter vers le haut de page </a>
-  <!-- Copyright -->
-  <div class="footer-bottom">
-    <p>&copy; 2024 Etudiant IUT Rives-De-Seine. Tous droits réservés.</p>
-  </div>
+</section>
+<section id="food">
+    <h2>Types of food</h2>
+    <div class="food-container container">
+        <div class="food-type fruite">
+            <div class="img-container">
+                <img src="https://i.postimg.cc/yxThVPXk/food1.jpg" alt="error" />
+                <div class="img-content">
+                    <h3>fruite</h3>
+                    <a
+                            href="https://en.wikipedia.org/wiki/Fruit"
+                            class="btn btn-primary"
+                            target="blank"
+                    >learn more</a
+                    >
+                </div>
+            </div>
+        </div>
+        <div class="food-type vegetable">
+            <div class="img-container">
+                <img src="https://i.postimg.cc/Nffm6Rkk/food2.jpg" alt="error" />
+                <div class="img-content">
+                    <h3>vegetable</h3>
+                    <a
+                            href="https://en.wikipedia.org/wiki/Vegetable"
+                            class="btn btn-primary"
+                            target="blank"
+                    >learn more</a
+                    >
+                </div>
+            </div>
+        </div>
+        <div class="food-type grin">
+            <div class="img-container">
+                <img src="https://i.postimg.cc/76ZwsPsd/food3.jpg" alt="error" />
+                <div class="img-content">
+                    <h3>grin</h3>
+                    <a
+                            href="https://en.wikipedia.org/wiki/Grain"
+                            class="btn btn-primary"
+                            target="blank"
+                    >learn more</a
+                    >
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<section id="food-menu">
+    <h2 class="food-menu-heading">Food Menu</h2>
+    <div class="food-menu-container container">
+        <div class="food-menu-item">
+            <div class="food-img">
+                <img src="https://i.postimg.cc/wTLMsvSQ/food-menu1.jpg" alt="" />
+            </div>
+            <div class="food-description">
+                <h2 class="food-titile">Food Menu Item 1</h2>
+                <p>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Non,
+                    quae.
+                </p>
+                <p class="food-price">Price: &#8377; 250</p>
+            </div>
+        </div>
+
+        <div class="food-menu-item">
+            <div class="food-img">
+                <img
+                        src="https://i.postimg.cc/sgzXPzzd/food-menu2.jpg"
+                        alt="error"
+                />
+            </div>
+            <div class="food-description">
+                <h2 class="food-titile">Food Menu Item 2</h2>
+                <p>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Non,
+                    quae.
+                </p>
+                <p class="food-price">Price: &#8377; 250</p>
+            </div>
+        </div>
+        <div class="food-menu-item">
+            <div class="food-img">
+                <img src="https://i.postimg.cc/8zbCtYkF/food-menu3.jpg" alt="" />
+            </div>
+            <div class="food-description">
+                <h2 class="food-titile">Food Menu Item 3</h2>
+                <p>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Non,
+                    quae.
+                </p>
+                <p class="food-price">Price: &#8377; 250</p>
+            </div>
+        </div>
+        <div class="food-menu-item">
+            <div class="food-img">
+                <img src="https://i.postimg.cc/Yq98p5Z7/food-menu4.jpg" alt="" />
+            </div>
+            <div class="food-description">
+                <h2 class="food-titile">Food Menu Item 4</h2>
+                <p>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Non,
+                    quae.
+                </p>
+                <p class="food-price">Price: &#8377; 250</p>
+            </div>
+        </div>
+        <div class="food-menu-item">
+            <div class="food-img">
+                <img src="https://i.postimg.cc/KYnDqxkP/food-menu5.jpg" alt="" />
+            </div>
+            <div class="food-description">
+                <h2 class="food-titile">Food Menu Item 5</h2>
+                <p>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Non,
+                    quae.
+                </p>
+                <p class="food-price">Price: &#8377; 250</p>
+            </div>
+        </div>
+        <div class="food-menu-item">
+            <div class="food-img">
+                <img src="https://i.postimg.cc/Jnxc8xQt/food-menu6.jpg" alt="" />
+            </div>
+            <div class="food-description">
+                <h2 class="food-titile">Food Menu Item 6</h2>
+                <p>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Non,
+                    quae.
+                </p>
+                <p class="food-price">Price: &#8377; 250</p>
+            </div>
+        </div>
+    </div>
+</section>
+
+<footer id="footer">
+    <h2>MS &copy; Tous les droits reservés</h2>
 </footer>
-<!--footer-->
 </body>
+
 </html>
