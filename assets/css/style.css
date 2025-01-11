@@ -111,7 +111,7 @@ body {
             rgba(240, 240, 240, 0.144),
             rgba(255, 255, 255, 0.336)
     ),
-    url("https://i.postimg.cc/wT3TQS3V/header-image2.jpg");
+    url("https://9to5google.com/?attachment_id=532809");
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
@@ -237,12 +237,21 @@ body {
     z-index: 2;
     text-align: center;
     transition: all 0.3s ease-in-out 0.1s;
+    width: 90%; /* Ajoutez cette propriété pour limiter la largeur */
+    max-width: 300px; /* Définissez une largeur maximale pour éviter le débordement */
+    padding: 10px; /* Ajoutez un peu de padding autour du texte pour l'isoler */
+    box-sizing: border-box; /* Assurez-vous que le padding n'affecte pas la largeur */
 }
 
 .img-content h3 {
     color: #fff;
-    font-size: 2.2rem;
+    font-size: 150%;
+    word-wrap: break-word; /* Permet de casser les mots longs si nécessaire */
+    margin: 0; /* Retirer toute marge par défaut */
+    padding: 0; /* Retirer toute marge interne */
 }
+
+
 
 .img-content a {
     font-size: 1.2rem;
@@ -322,10 +331,7 @@ body {
     font-weight: 500;
 }
 
-.food-description .food-price {
-    color: #117964;
-    font-weight: 700;
-}
+
 
 /* ........./ Testimonial /.......... */
 

@@ -6,7 +6,7 @@
     <title>Accueil</title>
     <link
             rel="stylesheet"
-            href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
+            href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
             integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w=="
             crossorigin="anonymous"
             referrerpolicy="no-referrer"
@@ -34,70 +34,69 @@
 <section class="showcase-area" id="showcase">
     <div class="showcase-container">
         <h1 class="main-title" id="home">Accueil</h1>
-        <p>La page principale</p>
-        <a href="#food-menu" class="btn btn-primary">Menu</a>
+        <p>Les définitions générales des termes à connaître</p>
+        <a href="#Sommaire" class="btn btn-primary">Sommaire</a>
     </div>
 </section>
 
 <section id="about">
     <div class="about-wrapper container">
         <div class="about-text">
-            <p class="small">About Us</p>
-            <h2>We've beem making healthy food last for 10 years</h2>
+            <p class="small">A propos du projet</p>
+            <h2>Installation d'une machine virtuel</h2>
             <p>
-                Lorem, ipsum dolor sit amet consectetur adipisicing elit. Esse ab
-                eos omnis, nobis dignissimos perferendis et officia architecto,
-                fugiat possimus eaque qui ullam excepturi suscipit aliquid optio,
-                maiores praesentium soluta alias asperiores saepe commodi
-                consequatur? Perferendis est placeat facere aspernatur!
+                Nous avons 1 mois pour installer et déployer un site qui a pour but de cette SAÉ (situation d’apprentissage et d’évaluation)
+                est dans un premier temps de s’initier à la technique de virtualisation en installant un environnement de virtualisation
+                et en créant une machine virtuelle. Dans un second temps, il s’agit d’installer
+                un serveur web et de l’utiliser pour mettre en ligne le rapport de la SAE.
             </p>
         </div>
         <div class="about-img">
-            <img src="https://i.postimg.cc/mgpwzmx9/about-photo.jpg" alt="food" />
+            <img src="assets/images/icons/accueil-icons/oracleVM.png" alt="img Oracle VM" />
         </div>
     </div>
 </section>
 <section id="food">
-    <h2>Types of food</h2>
+    <h2 id="Sommaire">Sommaire</h2>
     <div class="food-container container">
         <div class="food-type fruite">
             <div class="img-container">
-                <img src="https://i.postimg.cc/yxThVPXk/food1.jpg" alt="error" />
+                <img src="/assets/images/icons/accueil-icons/virtualisation_def.png" alt="img Def Virtualisation" />
                 <div class="img-content">
-                    <h3>fruite</h3>
+                    <h3>Définition de la virtualisation</h3>
                     <a
-                            href="https://en.wikipedia.org/wiki/Fruit"
+                            href="#def"
                             class="btn btn-primary"
                             target="blank"
-                    >learn more</a
+                    >En savoir plus </a
                     >
                 </div>
             </div>
         </div>
         <div class="food-type vegetable">
             <div class="img-container">
-                <img src="https://i.postimg.cc/Nffm6Rkk/food2.jpg" alt="error" />
+                <img src="/assets/images/icons/accueil-icons/diff.png" alt="img difference" />
                 <div class="img-content">
-                    <h3>vegetable</h3>
+                    <h3>Différence entre émulateur,simulateur,outil de virtualisation</h3>
                     <a
-                            href="https://en.wikipedia.org/wiki/Vegetable"
+                            href="#difference"
                             class="btn btn-primary"
                             target="blank"
-                    >learn more</a
+                    >En savoir plus </a
                     >
                 </div>
             </div>
         </div>
         <div class="food-type grin">
             <div class="img-container">
-                <img src="https://i.postimg.cc/76ZwsPsd/food3.jpg" alt="error" />
+                <img src="/assets/images/icons/accueil-icons/type_de_virtualisation.png" alt="error" />
                 <div class="img-content">
-                    <h3>grin</h3>
+                    <h3>Types de virtualisation </h3>
                     <a
-                            href="https://en.wikipedia.org/wiki/Grain"
+                            href="#type"
                             class="btn btn-primary"
                             target="blank"
-                    >learn more</a
+                    >En savoir plus </a
                     >
                 </div>
             </div>
@@ -105,88 +104,75 @@
     </div>
 </section>
 <section id="food-menu">
-    <h2 class="food-menu-heading">Food Menu</h2>
+    <h2 id="def" class="food-menu-heading">Définition de la virtualisation</h2>
     <div class="food-menu-container container">
         <div class="food-menu-item">
-            <div class="food-img">
-                <img src="https://i.postimg.cc/wTLMsvSQ/food-menu1.jpg" alt="" />
-            </div>
+
             <div class="food-description">
-                <h2 class="food-titile">Food Menu Item 1</h2>
                 <p>
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Non,
-                    quae.
+                    La virtualisation est une technologie qui permet de créer des versions virtuelles de ressources physiques (serveurs, systèmes d'exploitation, stockage, réseaux) pour optimiser leur utilisation et les gérer de manière indépendante.
                 </p>
-                <p class="food-price">Price: &#8377; 250</p>
             </div>
         </div>
 
+        <h2 id="difference" class="food-menu-heading">Différence entre émulateur, simulateur et outil de virtualisation</h2>
         <div class="food-menu-item">
-            <div class="food-img">
-                <img
-                        src="https://i.postimg.cc/sgzXPzzd/food-menu2.jpg"
-                        alt="error"
-                />
-            </div>
+
             <div class="food-description">
-                <h2 class="food-titile">Food Menu Item 2</h2>
+                <h2 class="food-titile">Émulateur</h2>
                 <p>
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Non,
-                    quae.
+                    Un émulateur recrée l’environnement matériel ou logiciel d’un système afin de permettre l’exécution d’applications comme si elles fonctionnaient sur ce système. Par exemple, un émulateur de console permet de jouer à des jeux conçus pour une console spécifique sur un autre appareil.
                 </p>
-                <p class="food-price">Price: &#8377; 250</p>
             </div>
         </div>
         <div class="food-menu-item">
-            <div class="food-img">
-                <img src="https://i.postimg.cc/8zbCtYkF/food-menu3.jpg" alt="" />
-            </div>
+
             <div class="food-description">
-                <h2 class="food-titile">Food Menu Item 3</h2>
+                <h2 class="food-titile">Simulateur</h2>
                 <p>
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Non,
-                    quae.
+                    Un simulateur imite le comportement et les fonctionnalités d’un système réel sans reproduire son environnement exact. Il est souvent utilisé pour tester des applications dans des conditions spécifiques, comme la navigation GPS ou les vols virtuels.
                 </p>
-                <p class="food-price">Price: &#8377; 250</p>
             </div>
         </div>
         <div class="food-menu-item">
-            <div class="food-img">
-                <img src="https://i.postimg.cc/Yq98p5Z7/food-menu4.jpg" alt="" />
-            </div>
             <div class="food-description">
-                <h2 class="food-titile">Food Menu Item 4</h2>
+                <h2 class="food-titile">Outil de virtualisation</h2>
                 <p>
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Non,
-                    quae.
+                    Les outils de virtualisation permettent de créer plusieurs environnements virtuels sur un seul système physique. Ils sont utilisés pour exécuter différents systèmes d’exploitation ou applications de manière isolée, comme avec VMware ou VirtualBox.
                 </p>
-                <p class="food-price">Price: &#8377; 250</p>
             </div>
         </div>
+
+        <h2 id="type" class="food-menu-heading">Types de virtualisation pour les environnements VirtualBox, VmWare, Microsoft Hyper-V</h2>
+
         <div class="food-menu-item">
+
             <div class="food-img">
-                <img src="https://i.postimg.cc/KYnDqxkP/food-menu5.jpg" alt="" />
+                <img src="assets/images/icons/accueil-icons/icons-type-virtual/type1.png" alt="" />
             </div>
             <div class="food-description">
-                <h2 class="food-titile">Food Menu Item 5</h2>
+
+                <h2 class="food-titile">Type 1</h2>
                 <p>
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Non,
-                    quae.
+                    La virtualisation de type 1
+                    (bare-metal) s'exécute directement sur le matériel physique,
+                    sans besoin d'un système d'exploitation hôte, offrant ainsi de meilleures performances
+                    et sécurité.<br><br>Exemple de VM : VirtualBox,VMware
                 </p>
-                <p class="food-price">Price: &#8377; 250</p>
             </div>
-        </div>
-        <div class="food-menu-item">
+
             <div class="food-img">
-                <img src="https://i.postimg.cc/Jnxc8xQt/food-menu6.jpg" alt="" />
+                <img src="assets/images/icons/accueil-icons/icons-type-virtual/type2.png" alt="" />
             </div>
             <div class="food-description">
-                <h2 class="food-titile">Food Menu Item 6</h2>
+
+                <h2 class="food-titile">Type 2</h2>
                 <p>
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Non,
-                    quae.
+                    la virtualisation de type 2 fonctionne sur un système d'exploitation hôte, ce qui la
+                    rend plus simple à installer mais généralement moins performante.<br><br>Exemple de VM : Microsoft Hyper-V
+
+
                 </p>
-                <p class="food-price">Price: &#8377; 250</p>
             </div>
         </div>
     </div>
