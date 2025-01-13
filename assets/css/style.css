@@ -96,6 +96,36 @@ body {
     color: #117964;
     transition: color 0.3s ease-in-out;
 }
+.logo-link {
+    text-decoration: none; /* Retire le soulignement */
+    color: inherit; /* Garde la couleur définie pour le logo */
+    display: flex; /* Pour préserver l'ordre défini avec `order` */
+    align-items: center; /* Aligne verticalement si nécessaire */
+}
+
+.logo {
+    order: 1; /* Respecte l'ordre défini */
+    font-size: 2.3rem;
+    margin-bottom: 0.5rem;
+}
+
+@media (max-width: 768px) {
+    .logo {
+        position: absolute;
+        top: 5px;
+        right: 15px;
+        font-size: 2rem;
+    }
+}
+
+@media (max-width: 500px) {
+    .logo {
+        position: absolute;
+        top: 6px;
+        right: 15px;
+        font-size: 3rem;
+    }
+}
 
 .logo {
     order: 1;
@@ -117,6 +147,7 @@ body {
     background-repeat: no-repeat;
 }
 
+
 .showcase-container {
     display: flex;
     flex-direction: column;
@@ -131,61 +162,61 @@ body {
     margin-top: 1.5em;
 }
 
-/* ......//about us//...... */
+/* ......//A Propos//...... */
 
-#about {
+#a-propos {
     padding: 50px 0;
     background: #f5f5f7;
 }
 
-.about-wrapper {
+.a-propos-wrapper {
     display: flex;
     flex-wrap: wrap;
 }
 
-#about h2 {
+#a-propos h2 {
     font-size: 2.3rem;
 }
 
-#about p {
+#a-propos p {
     font-size: 1.2rem;
     color: #555;
 }
 
-#about .small {
+#a-propos .small {
     font-size: 1.2rem;
     color: #666;
     font-weight: 600;
 }
 
-.about-img {
+.a-propos-img {
     flex: 1 1 400px;
     padding: 30px;
     transform: translateX(150%);
-    animation: about-img-animation 1s ease-in-out forwards;
+    animation: a-propos-img-animation 1s ease-in-out forwards;
 }
 
-@keyframes about-img-animation {
+@keyframes a-propos-img-animation {
     100% {
         transform: translate(0);
     }
 }
 
-.about-text {
+.a-propos-text {
     flex: 1 1 400px;
     padding: 30px;
     margin: auto;
     transform: translate(-150%);
-    animation: about-text-animation 1s ease-in-out forwards;
+    animation:a-propos-text-animation 1s ease-in-out forwards;
 }
 
-@keyframes about-text-animation {
+@keyframes a-propos-text-animation {
     100% {
         transform: translate(0);
     }
 }
 
-.about-img img {
+.a-propos-img img {
     display: block;
     height: 400px;
     max-width: 100%;
@@ -194,13 +225,13 @@ body {
     object-position: right;
 }
 
-/* ..........////Food category///........... */
+/* ..........////content category///........... */
 
-#food {
+#content {
     padding: 5rem 0 10rem 0;
 }
 
-#food h2 {
+#content h2 {
     text-align: center;
     font-size: 2.5rem;
     font-weight: 400;
@@ -209,12 +240,12 @@ body {
     color: #555;
 }
 
-.food-container {
+.content-container {
     display: flex;
     justify-content: space-between;
 }
 
-.food-container img {
+.content-container img {
     display: block;
     width: 100%;
     margin: auto;
@@ -284,22 +315,22 @@ body {
     top: 40%;
 }
 
-/* .........../Food Menu/............ */
+/* .........../content Menu/............ */
 
-.food-menu-heading {
+.content-menu-heading {
     text-align: center;
     font-size: 3.4rem;
     font-weight: 400;
     color: #666;
 }
 
-.food-menu-container {
+.content-menu-container {
     display: flex;
     flex-wrap: wrap;
     padding: 50px 0px 30px 0px;
 }
 
-.food-menu-container img {
+.content-menu-container img {
     display: block;
     width: 250px;
     height: 250px;
@@ -308,14 +339,14 @@ body {
     object-position: center;
 }
 
-.food-menu-item {
+.content-menu-item {
     display: flex;
     flex: 1 1 600px;
     justify-content: space-evenly;
     margin-bottom: 3rem;
 }
 
-.food-description {
+.content-description {
     margin: auto 1.5rem;
 }
 
@@ -325,7 +356,7 @@ body {
     color: #444;
 }
 
-.food-description p {
+.content-description p {
     font-size: 1.4rem;
     color: #555;
     font-weight: 500;
@@ -333,42 +364,42 @@ body {
 
 
 
-/* ........./ Testimonial /.......... */
+/* ........./ Contacts /.......... */
 
-#testimonials {
+#Contacts {
     padding: 5rem 0;
     background: rgba(243, 243, 243);
 }
 
-.testimonial-title {
+.Contacts-title {
     text-align: center;
     font-size: 2.8rem;
     font-weight: 400;
     color: #555;
 }
 
-.testimonial-container {
+.Contacts-container {
     display: flex;
     justify-content: space-between;
     font-size: 1.4rem;
     padding: 1rem;
 }
 
-.testimonial-box .checked {
+.Contacts-box .checked {
     color: #ff9529;
 }
 
-.testimonial-box .testimonial-text {
+.Contacts-box .Contacts-text {
     margin: 1rem 0;
     color: #444;
 }
 
-.testimonial-box {
+.Contacts-box {
     text-align: center;
     padding: 1rem;
 }
 
-.customer-photo img {
+.Contacts-photo img {
     display: block;
     width: 150px;
     height: 150px;
@@ -377,7 +408,6 @@ body {
     border-radius: 50%;
     margin: auto;
 }
-
 
 
 #footer h2 {
@@ -496,18 +526,18 @@ body {
         transform: rotate(-35deg);
     }
 
-    /* ......./ food /......... */
+    /* ......./ content /......... */
 
-    .food-container {
+    .content-container {
         flex-direction: column;
         align-items: stretch;
     }
 
-    .food-type:not(:last-child) {
+    .content-type:not(:last-child) {
         margin-bottom: 3rem;
     }
 
-    .food-type {
+    .content-type {
         box-shadow: 5px 5px 10px 0 #aaa;
     }
 
@@ -525,24 +555,19 @@ body {
         font-size: 1.6rem;
     }
 
-    .testimonial-container {
+    .contact-container {
         flex-direction: column;
         text-align: center;
     }
 
-    .food-menu-container img {
+    .content-menu-container img {
         margin: auto;
     }
 
-    .food-menu-item {
+    .content-menu-item {
         flex-direction: column;
         text-align: center;
     }
-
-    .form-container {
-        width: 90%;
-    }
-
     .contact-container {
         display: flex;
         flex-direction: column;

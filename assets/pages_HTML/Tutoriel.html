@@ -3,7 +3,7 @@
   <meta charset="UTF-8" />
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Tutoriel</title>
+  <title>Page Tutoriel - SAE 1.03</title>
   <link
           rel="stylesheet"
           href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
@@ -23,46 +23,48 @@
       <span class="line line3"></span>
     </div>
     <ul class="menu-items">
-      <li><a href="../../Accueil.html">Accueil</a></li>
+      <li><a href="Accueil.html">Accueil</a></li>
       <li><a href="Tutoriel.html">Tutoriel</a></li>
       <li><a href="Personnalisation.html">Personnalisation</a></li>
       <li><a href="Contact.html">Contact</a></li>
     </ul>
-    <h1 class="logo">MS</h1>
+    <a href="Accueil.html" class="logo-link">
+      <h1 class="logo">MS</h1>
+    </a>
   </div>
 </nav>
 <section class="showcase-area" id="showcase">
   <div class="showcase-container">
     <h1 class="main-title" id="home">Tutoriel</h1>
     <p>Comment installer la VM</p>
-    <a href="#food-menu" class="btn btn-primary">Sommaire</a>
+    <a href="#Etape" class="btn btn-primary">Etape</a>
   </div>
 </section>
 
-<section id="about">
-  <div class="about-wrapper container">
-    <div class="about-text">
-      <p class="small">A propos</p>
-      <h2>Sur cette page on va montrer comment faire les installations</h2>
-      <p>
-        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Esse ab
-        eos omnis, nobis dignissimos perferendis et officia architecto,
-        fugiat possimus eaque qui ullam excepturi suscipit aliquid optio,
-        maiores praesentium soluta alias asperiores saepe commodi
-        consequatur? Perferendis est placeat facere aspernatur!
-      </p>
-    </div>
-    <div class="about-img">
+<section id="a-propos">
+  <div class="a-propos-wrapper container"><div class="a-propos-text">
+    <p class="small">À propos</p>
+    <h2>Instructions et Guide d'Installation</h2>
+    <p>
+      Cette section est dédiée à vous guider à travers les étapes d'installation de
+      notre projet. Vous y trouverez des explications claires et détaillées pour
+      configurer correctement l'environnement, installer les dépendances nécessaires,
+      et lancer l'application en toute simplicité. Suivez ce guide pour une mise en
+      place rapide et efficace !
+    </p>
+  </div>
+
+    <div class="a-propos-img">
       <img src="../images/icons/icons-tuto/install.png" alt="img d'installation" />
     </div>
   </div>
 </section>
-<section id="food">
+<section id="content">
   <h2>Vidéo pour faire les installations</h2>
-  <div class="food-container container">
-    <div class="food-type fruite">
+  <div class="content-container container">
+    <div class="content-type">
       <div class="img-container">
-        <img src="../images/icons/icons-tuto/minia/tutoYTjpg.jpg" alt="Vidéo YT de Giustignano" />
+        <img src="../images/icons/icons-tuto/minia/tutoYTjpg.jpg" alt="Vidéo YT pour installer Ubuntu et Oracle VM  " />
         <div class="img-content">
           <h3>Tuto Youtube</h3>
           <a
@@ -74,9 +76,9 @@
         </div>
       </div>
     </div>
-    <div class="food-type vegetable">
+    <div class="content-type">
       <div class="img-container">
-        <img src="../images/icons/icons-tuto/minia/maxresdefault.jpg" alt="error" />
+        <img src="../images/icons/icons-tuto/minia/maxresdefault.jpg" alt="Img du tuto YT de Laurent" />
         <div class="img-content">
           <h3>Tuto de M.Giustignano</h3>
           <a
@@ -91,82 +93,77 @@
 
   </div>
 </section>
-<section id="food-menu">
-  <h2 class="food-menu-heading">Etape de l'installation</h2>
-  <div class="food-menu-container container">
-    <div class="food-menu-item">
-      <div class="food-img">
-        <img src="" alt="" />
+<section id="content-menu">
+  <h2 id="Etape" class="content-menu-heading">Etape de l'installation</h2>
+  <div class="content-menu-container container">
+    <div class="content-menu-item">
+      <div class="content-img">
+        <img src="../images/icons/accueil-icons/oracleVM.png" alt="img Oracle VM" />
       </div>
-      <div class="food-description">
-        <h2 class="food-titile">Etape 1</h2>
+      <div class="content-description">
+        <h2 class="content-title">Etape 1</h2>
         <p>
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Non,
-          quae.
+          Installation de la MV dans notre cas ici :<br> <strong> Oracle VM VirtualBox </strong>
         </p>
       </div>
     </div>
 
-    <div class="food-menu-item">
-      <div class="food-img">
+    <div class="content-menu-item">
+      <div class="content-img">
         <img
-                src=""
-                alt="error"
+                src="../images/icons/icon-personnalisation/ubuntu-logo.jpg"
+                alt="img de Ubuntu"
         />
       </div>
-      <div class="food-description">
-        <h2 class="food-titile">Etape 2</h2>
+      <div class="content-description">
+        <h2 class="content-title">Etape 2</h2>
         <p>
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Non,
-          quae.
+          Installation d'un système d'exploitation dans notre exemple on prend : <strong> Ubuntu </strong>
         </p>
       </div>
     </div>
-    <div class="food-menu-item">
-      <div class="food-img">
-        <img src="" alt="" />
+    <div class="content-menu-item">
+      <div class="content-img">
+        <img src="../images/icons/icons-tuto/etape3.png" alt="" />
       </div>
-      <div class="food-description">
-        <h2 class="food-titile">Etape 3</h2>
+      <div class="content-description">
+        <h2 class="content-title">Etape 3</h2>
         <p>
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Non,
-          quae.
+          Création du profil que ça soit l'utilsateur et son mot de passe de  l'OS de la MV
         </p>
       </div>
     </div>
-    <div class="food-menu-item">
-      <div class="food-img">
+    <div class="content-menu-item">
+      <div class="content-img">
         <img src="" alt="" />
       </div>
-      <div class="food-description">
-        <h2 class="food-titile">Etape 4</h2>
+      <div class="content-description">
+        <h2 class="content-title">Etape 4</h2>
         <p>
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Non,
-          quae.
+          Configurer les paramètres et les ressources de la MV
         </p>
       </div>
     </div>
-    <div class="food-menu-item">
-      <div class="food-img">
+    <div class="content-menu-item">
+      <div class="content-img">
         <img src="" alt="" />
       </div>
-      <div class="food-description">
-        <h2 class="food-titile">Etape 5</h2>
+      <div class="content-description">
+        <h2 class="content-title">Etape 5</h2>
         <p>
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Non,
-          quae.
+          Entrer le mot de passe "Attention" le clavier et en QWERTY faites le nécessaire pour écrire
+          correctement votre MDP
         </p>
       </div>
     </div>
-    <div class="food-menu-item">
-      <div class="food-img">
+    <div class="content-menu-item">
+      <div class="content-img">
         <img src="" alt="" />
       </div>
-      <div class="food-description">
-        <h2 class="food-titile">Etape 6</h2>
+      <div class="content-description">
+        <h2 class="content-title">Etape 6</h2>
         <p>
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Non,
-          quae.
+          Aller dans les paramètres dans Ubuntu pour mettre le clavier en FR soit AZERTY
         </p>
       </div>
     </div>

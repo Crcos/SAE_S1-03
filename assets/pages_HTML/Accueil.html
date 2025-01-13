@@ -1,0 +1,209 @@
+<html lang="fr">
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Page Accueil - SAE 1.03</title>
+    <link
+            rel="stylesheet"
+            href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
+            integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w=="
+            crossorigin="anonymous"
+            referrerpolicy="no-referrer"
+    />
+    <link rel="stylesheet" href="../css/style.css" />
+</head>
+<body>
+<nav class="navbar">
+    <div class="navbar-container container">
+        <input type="checkbox" name="" id="">
+        <div class="hamburger-lines">
+            <span class="line line1"></span>
+            <span class="line line2"></span>
+            <span class="line line3"></span>
+        </div>
+        <ul class="menu-items">
+            <li><a href="Accueil.html">Accueil</a></li>
+            <li><a href="Tutoriel.html">Tutoriel</a></li>
+            <li><a href="Personnalisation.html">Personnalisation</a></li>
+            <li><a href="Contact.html">Contact</a></li>
+        </ul>
+        <a href="Accueil.html" class="logo-link">
+            <h1 class="logo">MS</h1>
+        </a>
+
+    </div>
+</nav>
+<section class="showcase-area" id="showcase">
+    <div class="showcase-container">
+        <h1 class="main-title" id="home">Accueil</h1>
+        <p>Les définitions générales des termes à connaître</p>
+        <a href="#Sommaire" class="btn btn-primary">Sommaire</a>
+    </div>
+</section>
+
+<section id="a-propos">
+    <div class="a-propos-wrapper container">
+        <div class="a-propos-text">
+            <p class="small">A propos du projet</p>
+            <h2>Installation d'une machine virtuel</h2>
+            <p>
+                Nous avons 1 mois pour installer et déployer un site qui a pour but de cette SAÉ (situation d’apprentissage et d’évaluation)
+                est dans un premier temps de s’initier à la technique de virtualisation en installant un environnement de virtualisation
+                et en créant une machine virtuelle. Dans un second temps, il s’agit d’installer
+                un serveur web et de l’utiliser pour mettre en ligne le rapport de la SAE.
+            </p>
+        </div>
+        <div class="a-propos-img">
+            <img src="../images/icons/accueil-icons/oracleVM.png" alt="img Oracle VM" />
+        </div>
+    </div>
+</section>
+<section id="content">
+    <h2 id="Sommaire">Sommaire</h2>
+    <div class="content-container container">
+        <div class="content-type">
+            <div class="img-container">
+                <img src="/assets/images/icons/accueil-icons/virtualisation_def.png" alt="img Def Virtualisation" />
+                <div class="img-content">
+                    <h3>Définition de la virtualisation</h3>
+                    <a
+                            href="#def"
+                            class="btn btn-primary"
+                            target="blank"
+                    >En savoir plus </a
+                    >
+                </div>
+            </div>
+        </div>
+        <div class="content-type">
+            <div class="img-container">
+                <img src="/assets/images/icons/accueil-icons/diff.png" alt="img difference" />
+                <div class="img-content">
+                    <h3>Différence entre émulateur,simulateur,outil de virtualisation</h3>
+                    <a
+                            href="#difference"
+                            class="btn btn-primary"
+                            target="blank"
+                    >En savoir plus </a
+                    >
+                </div>
+            </div>
+        </div>
+        <div class="content-type">
+            <div class="img-container">
+                <img src="/assets/images/icons/accueil-icons/type_de_virtualisation.png" alt="Img Type de Virtualisation" />
+                <div class="img-content">
+                    <h3>Types de virtualisation </h3>
+                    <a
+                            href="#type"
+                            class="btn btn-primary"
+                            target="blank"
+                    >En savoir plus </a
+                    >
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<section id="content-menu">
+    <h2 id="def" class="content-menu-heading">Définition de la virtualisation</h2>
+    <div class="content-menu-container container">
+        <div class="content-menu-item">
+
+            <div class="content-description">
+                <p>
+                    La virtualisation est une technologie qui permet de créer des versions
+                    virtuelles de ressources physiques (serveurs, systèmes d'exploitation,
+                    stockage, réseaux) pour optimiser leur utilisation et les gérer de manière
+                    indépendante.
+                </p>
+            </div>
+        </div>
+
+        <h2 id="difference" class="content-menu-heading">
+            Différence entre émulateur, simulateur et
+            outil de virtualisation
+        </h2>
+        <div class="content-menu-item">
+
+            <div class="content-description">
+                <h2 class="content-title">Émulateur</h2>
+                <p>
+                    Un émulateur recrée l’environnement matériel ou logiciel d’un système
+                    afin de permettre l’exécution d’applications comme si elles fonctionnaient
+                    sur ce système. Par exemple, un émulateur de console permet de jouer à des
+                    jeux conçus pour une console spécifique sur un autre appareil.
+                </p>
+            </div>
+        </div>
+        <div class="content-menu-item">
+
+            <div class="content-description">
+                <h2 class="content-title">Simulateur</h2>
+                <p>
+                    Un simulateur imite le comportement et les fonctionnalités d’un système réel
+                    sans reproduire son environnement exact. Il est souvent utilisé pour tester
+                    des applications dans des conditions spécifiques, comme la navigation GPS ou
+                    les vols virtuels.
+                </p>
+            </div>
+        </div>
+        <div class="content-menu-item">
+            <div class="content-description">
+                <h2 class="content-title">Outil de virtualisation</h2>
+                <p>
+                    Les outils de virtualisation permettent de créer plusieurs environnements
+                    virtuels sur un seul système physique. Ils sont utilisés pour exécuter différents
+                    systèmes d’exploitation ou applications de manière isolée, comme avec VMware ou
+                    VirtualBox.
+                </p>
+            </div>
+        </div>
+
+        <h2 id="type" class="content-menu-heading">
+            Types de virtualisation pour les environnements
+            VirtualBox, VmWare, Microsoft Hyper-V
+        </h2>
+
+        <div class="content-menu-item">
+
+            <div class="content-img">
+                <img src="../images/icons/accueil-icons/icons-type-virtual/type1.png" alt="" />
+            </div>
+            <div class="content-description">
+
+                <h2 class="content-title">Type 1</h2>
+                <p>
+                    La virtualisation de type 1
+                    (bare-metal) s'exécute directement sur le matériel physique,
+                    sans besoin d'un système d'exploitation hôte, offrant ainsi de meilleures
+                    performances
+                    et sécurité.<br><br>Exemple de VM : VirtualBox,VMware
+                </p>
+            </div>
+
+            <div class="content-img">
+                <img src="../images/icons/accueil-icons/icons-type-virtual/type2.png" alt="" />
+            </div>
+            <div class="content-description">
+
+                <h2 class="content-title">Type 2</h2>
+                <p>
+                    la virtualisation de type 2 fonctionne sur un système d'exploitation hôte, ce qui
+                    la rend plus simple à installer mais généralement moins performante.
+                    <br><br>Exemple de VM : Microsoft Hyper-V
+
+
+                </p>
+            </div>
+        </div>
+    </div>
+</section>
+
+<footer id="footer">
+    <h2>MS &copy; Tous les droits reservés</h2>
+</footer>
+</body>
+
+</html>
