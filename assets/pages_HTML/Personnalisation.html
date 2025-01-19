@@ -68,7 +68,7 @@
         <div class="img-content">
           <h3>Manip 1</h3>
           <a
-                  href=""
+                  href="#M1"
                   class="btn btn-primary"
                   target="blank"
           >Aller voir</a
@@ -82,7 +82,7 @@
         <div class="img-content">
           <h3>Manip 2</h3>
           <a
-                  href=""
+                  href="#M2"
                   class="btn btn-primary"
                   target="blank"
           >Aller voir</a
@@ -96,7 +96,7 @@
         <div class="img-content">
           <h3>Manip 3</h3>
           <a
-                  href=""
+                  href="#M3"
                   class="btn btn-primary"
                   target="blank"
           >Aller voir</a
@@ -110,7 +110,7 @@
         <div class="img-content">
           <h3>Manip 4</h3>
           <a
-                  href=""
+                  href="#M4"
                   class="btn btn-primary"
                   target="blank"
           >Aller voir</a
@@ -124,7 +124,7 @@
         <div class="img-content">
           <h3>Manip 5</h3>
           <a
-                  href=""
+                  href="#M5"
                   class="btn btn-primary"
                   target="blank"
           >Aller voir</a
@@ -137,21 +137,38 @@
 <section id="content-menu">
   <h2 class="content-menu-heading">Les différentes manipulations</h2>
   <div class="container_gantt">
-    <h2 class="content-menu-heading">Voir Manip 1 en plus grand</h2>
+    <h2 class="content-menu-heading"></h2>
     <!-- Bouton pour afficher l'image -->
     <input type="checkbox" id="img-toggle">
     <label for="img-toggle">Voir l'image</label>
     <div class="toggle-content">
-      <img src="/assets/images/icons/icon-personnalisation/manip1.png" alt="Diagramme de Gantt">
+      <img src="/assets/images/icons/icon-personnalisation/manip1.png" alt="Manip 1">
     </div>
   </div>
   <div class="content-menu-container container">
     <div class="content-menu-item">
-      <div class="content-img">
-        <img src="../images/icons/icon-personnalisation/manip1.png" alt="" />
+      <div class="content-type">
+        <div class="img-container">
+          <img src="../images/icons/icon-personnalisation/manip1.png" alt="Manipulation 1" />
+          <div class="img-content">
+            <h3>Manipulation 1</h3>
+
+            <!-- Bouton pour afficher l'image -->
+            <input type="checkbox" id="img-toggle" class="img-toggle">
+            <label for="img-toggle" class="btn btn-primary">Voir l'image</label>
+
+            <!-- Contenu à afficher en grand format -->
+            <div class="toggle-content">
+              <img src="../images/icons/icon-personnalisation/manip1.png" alt="Manip 1">
+            </div>
+          </div>
+        </div>
       </div>
+
+
       <div class="content-description">
-        <h2 class="content-title">Manip 1</h2>
+
+        <h2 id ="M1" class="content-title">Manip 1</h2>
         <p>
           Création d’un compte administrateur admin_GrXX_BinomeYY, XX et YY étant respectivement votre
           numéro de groupe et de binôme.
@@ -167,7 +184,7 @@
         />
       </div>
       <div class="content-description">
-        <h2 class="content-title">Manip 2</h2>
+        <h2 id ="M2" class="content-title">Manip 2</h2>
         <p>
           Création de deux utilisateurs BinomeYY_1 et BinomeYY_2.
         </p>
@@ -178,7 +195,7 @@
         <img src="../images/icons/icon-personnalisation/manip3.png" alt="" />
       </div>
       <div class="content-description">
-        <h2 class="content-title">Manip 3</h2>
+        <h2 id ="M3" class="content-title">Manip 3</h2>
         <p>
              La création d’un groupe BinomeYY dans le Terminal.
         </p>
@@ -189,7 +206,7 @@
         <img src="../images/icons/icon-personnalisation/manip4.png" alt="" />
       </div>
       <div class="content-description">
-        <h2 class="content-title">Manip 4</h2>
+        <h2 id ="M4" class="content-title">Manip 4</h2>
         <p>
           Personnalisation d’une invite de commande (prompt) paramétrée avec le nom de l’utilisateur.
         </p>
@@ -200,7 +217,7 @@
         <img src="../images/icons/icon-personnalisation/manip5.png" alt="" />
       </div>
       <div class="content-description">
-        <h2 class="content-title">Manip 5</h2>
+        <h2 id ="M5" class="content-title">Manip 5</h2>
         <p>
           Les comptes Binome_05_1 et Binome_05_2 sont ajoutés au groupe Binome_05,
           avec une vérification confirmant que l'opération a réussi.
