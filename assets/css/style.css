@@ -426,22 +426,18 @@ body {
 /* Masquer le contenu de .toggle-content par défaut */
 .toggle-content {
     display: none;
-    width: 100%; /* S'assure que l'image occupe tout l'espace disponible */
-    text-align: center; /* Centre le contenu */
+    width: 100%;
+    text-align: center;
+    margin-top: 20px;
 }
 
-
-/* Afficher le contenu si la case à cocher est cochée */
-input[type="checkbox"]:checked + label + .toggle-content {
+/* Afficher l'image lorsque le lien avec href="#image-manip1" est cliqué */
+#image-manip1:target {
     display: block;
-
 }
 
-input[type="checkbox"] {
-    display: none;
-}
-
-label {
+/* Styles pour le lien (bouton "Voir l'image") */
+.btn {
     display: inline-block;
     margin-top: 1rem;
     padding: 0.5rem 1.5rem;
@@ -452,17 +448,43 @@ label {
     transition: background-color 0.3s ease;
 }
 
-label:hover {
+.btn:hover {
     background-color: #0056b3;
     box-shadow: 0 4px 8px rgba(255, 255, 255, 0.3);
 }
+
 /* Styles pour l'image */
 .toggle-content img {
-    max-width: 100%; /* Ajuste l'image à la taille de l'écran si elle est trop grande */
-    height: auto;
+    width: 100%; /* L'image prendra toute la largeur de l'espace disponible */
+    height: 100%; /* L'image prendra également toute la hauteur disponible */
+    object-fit: contain; /* Assure que l'image garde son ratio tout en remplissant l'espace */
     margin-top: 20px;
     border-radius: 8px;
 }
+
+
+/* Bouton de fermeture pour masquer l'image */
+.close-btn {
+    display: inline-block;
+    margin-top: 20px;
+    padding: 0.5rem 1.5rem;
+    background-color: #ff6f61;
+    color: #fff;
+    cursor: pointer;
+    border-radius: 4px;
+    transition: background-color 0.3s ease;
+}
+
+.close-btn:hover {
+    background-color: #cc4a3d;
+}
+
+/* Supprime l'affichage du contenu au clic sur le bouton "Fermer l'image" */
+#image-manip1:target .close-btn:focus {
+    display: none;
+}
+
+
 /* ........./ Fin bouton Gantt /.......... */
 
 /* ........./ Contacts /.......... */

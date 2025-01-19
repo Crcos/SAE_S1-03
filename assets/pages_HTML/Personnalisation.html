@@ -136,39 +136,22 @@
 </section>
 <section id="content-menu">
   <h2 class="content-menu-heading">Les différentes manipulations</h2>
-  <div class="container_gantt">
-    <h2 class="content-menu-heading"></h2>
-    <!-- Bouton pour afficher l'image -->
-    <input type="checkbox" id="img-toggle">
-    <label for="img-toggle">Voir l'image</label>
-    <div class="toggle-content">
-      <img src="/assets/images/icons/icon-personnalisation/manip1.png" alt="Manip 1">
-    </div>
-  </div>
+
   <div class="content-menu-container container">
-    <div class="content-menu-item">
-      <div class="content-type">
-        <div class="img-container">
-          <img src="../images/icons/icon-personnalisation/manip1.png" alt="Manipulation 1" />
-          <div class="img-content">
-            <h3>Manipulation 1</h3>
-
-            <!-- Bouton pour afficher l'image -->
-            <input type="checkbox" id="img-toggle" class="img-toggle">
-            <label for="img-toggle" class="btn btn-primary">Voir l'image</label>
-
-            <!-- Contenu à afficher en grand format -->
-            <div class="toggle-content">
-              <img src="../images/icons/icon-personnalisation/manip1.png" alt="Manip 1">
-            </div>
-          </div>
+    <div class="content-type">
+      <div class="img-container">
+        <img id="img-manip1" src="../images/icons/icon-personnalisation/manip1.png" alt="Manip 1" />
+        <div class="img-content">
+          <h3>Manip 1</h3>
+          <!-- Le bouton "Voir l'image" reste ici -->
+          <a href="#image-manip1" class="btn btn-primary">Voir l'image</a>
         </div>
       </div>
+    </div>
 
-
+    <div class="content-menu-item">
       <div class="content-description">
-
-        <h2 id ="M1" class="content-title">Manip 1</h2>
+        <h2 id="M1" class="content-title">Manip 1</h2>
         <p>
           Création d’un compte administrateur admin_GrXX_BinomeYY, XX et YY étant respectivement votre
           numéro de groupe et de binôme.
@@ -176,6 +159,14 @@
       </div>
     </div>
 
+    <!-- Section de l'image avec un bouton pour masquer -->
+    <div id="image-manip1" class="toggle-content">
+      <img src="../images/icons/icon-personnalisation/manip1.png" alt="Manipulation 1">
+      <a href="#img-manip1" class="close-btn">Fermer l'image</a> <!-- Lien pour fermer -->
+    </div>
+  </div>
+
+  <div class="content-menu-container container">
     <div class="content-menu-item">
       <div class="content-img">
         <img
@@ -190,6 +181,8 @@
         </p>
       </div>
     </div>
+    </div>
+  <div class="content-menu-container container">
     <div class="content-menu-item">
       <div class="content-img">
         <img src="../images/icons/icon-personnalisation/manip3.png" alt="" />
@@ -201,6 +194,8 @@
         </p>
       </div>
     </div>
+  </div>
+  <div class="content-menu-container container">
     <div class="content-menu-item">
       <div class="content-img">
         <img src="../images/icons/icon-personnalisation/manip4.png" alt="" />
@@ -212,6 +207,8 @@
         </p>
       </div>
     </div>
+  </div>
+  <div class="content-menu-container container">
     <div class="content-menu-item">
       <div class="content-img">
         <img src="../images/icons/icon-personnalisation/manip5.png" alt="" />
@@ -225,8 +222,8 @@
 
       </div>
     </div>
-
   </div>
+
 </section>
 <a href="#" class="back-to-top">↑ Remonter vers le haut de page </a>
 <footer id="footer">
