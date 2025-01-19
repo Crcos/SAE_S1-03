@@ -617,6 +617,14 @@ label:hover {
     background: #555;
 }
 /*Bouton remonter*/
+.alert {
+    color: red;
+    font-weight: bold;
+    font-size: 24px;
+
+    padding: 10px;
+    border-radius: 5px;
+}
 
 /* ......../ media query /.......... */
 
