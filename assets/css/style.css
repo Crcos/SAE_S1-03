@@ -416,11 +416,63 @@ body {
 }
 /* .........../Bouton pour voir les images/............ */
 
-.container_gantt {
+
+/* Styles pour le conteneur principal */
+.gantt-wrapper {
     display: flex;
     flex-direction: column;
     align-items: center;
     margin: 2rem 0; /* Ajouter de l'espace autour du conteneur */
+}
+
+/* Masquer le contenu de .gantt-image-container par défaut */
+.gantt-image-container {
+    display: none;
+    width: 100%; /* S'assure que l'image occupe tout l'espace disponible */
+    text-align: center; /* Centre le contenu */
+}
+
+/* Afficher le contenu si la case à cocher est cochée */
+input[type="checkbox"]:checked + label + .gantt-image-container {
+    display: block;
+    margin-top: 1rem; /* Ajoute un espace au-dessus de l'image */
+}
+/* Cacher la checkbox */
+input[type="checkbox"] {
+    display: none;
+}
+
+/* Style de l'image */
+.gantt-image-container img {
+    max-width: 100%; /* L'image occupe tout l'espace possible sans déborder */
+    height: auto; /* Respecte les proportions de l'image */
+    border: 1px solid #ccc; /* Optionnel : Ajoute une bordure */
+    border-radius: 8px; /* Optionnel : Ajoute des coins arrondis */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Optionnel : Ajoute une ombre */
+}
+
+/* Style du bouton/label */
+label {
+    display: inline-block;
+    margin-top: 1rem;
+    padding: 0.5rem 1.5rem;
+    background-color: #16a083;
+    color: #fff;
+    cursor: pointer;
+    border-radius: 4px;
+    transition: background-color 0.3s ease;
+}
+
+label:hover {
+    background-color: #117964;
+}
+
+
+/* Styles pour l'image */
+.image-content img {
+    max-width: 100%; /* Ajuste l'image à la taille de l'écran si elle est trop grande */
+    height: auto;
+    margin-top: 20px;
 }
 
 /* Masquer le contenu de .toggle-content par défaut */
@@ -432,7 +484,11 @@ body {
 }
 
 /* Afficher l'image lorsque le lien avec href="#image-manip1" est cliqué */
-#image-manip1:target {
+#image-manip1:target,
+#image-manip2:target,
+#image-manip3:target,
+#image-manip4:target,
+#image-manip5:target {
     display: block;
 }
 
@@ -480,10 +536,13 @@ body {
 }
 
 /* Supprime l'affichage du contenu au clic sur le bouton "Fermer l'image" */
-#image-manip1:target .close-btn:focus {
+#image-manip1:target .close-btn:focus,
+#image-manip2:target .close-btn:focus,
+#image-manip3:target .close-btn:focus,
+#image-manip4:target .close-btn:focus,
+#image-manip5:target .close-btn:focus {
     display: none;
 }
-
 
 /* ........./ Fin bouton Gantt /.......... */
 
