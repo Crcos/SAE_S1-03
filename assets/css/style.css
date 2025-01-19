@@ -16,7 +16,7 @@ body {
     font-family: "Poppins", sans-serif;
 }
 
-/* ///////////..utility classes../////////// */
+/* ///////////..classe Utile ../////////// */
 
 .container {
     max-width: 1200px;
@@ -48,7 +48,7 @@ body {
 
 /* ............/navbar/............ *
 
-/* desktop mode............/// */
+/* Bureau mode............/// */
 
 .navbar input[type="checkbox"],
 .navbar .hamburger-lines {
@@ -133,7 +133,7 @@ body {
     margin-bottom: 0.5rem;
 }
 
-/* ............//// Showcase styling ////......... */
+/* ............//// Showcase style ////......... */
 
 .showcase-area {
     height: 50vh;
@@ -230,6 +230,9 @@ body {
 #content {
     padding: 5rem 0 10rem 0;
 }
+#content-deploiement {
+    padding: 5rem 0 10rem 0;
+}
 
 #content h2 {
     text-align: center;
@@ -242,7 +245,7 @@ body {
 
 .content-container {
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
 }
 
 .content-container img {
@@ -257,6 +260,7 @@ body {
 .img-container {
     margin: 0 1rem;
     position: relative;
+
 }
 
 .img-content {
@@ -323,20 +327,41 @@ body {
     font-weight: 400;
     color: #666;
 }
-
+.content-menubis-heading {
+    text-align: center;
+    font-size: 3.4rem;
+    font-weight: 400;
+    color: #666;
+}
 .content-menu-container {
     display: flex;
     flex-wrap: wrap;
     padding: 50px 0px 30px 0px;
 }
-
+.content-menubis-container {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 50px 0px 30px 0px;
+}
 .content-menu-container img {
     display: block;
-    width: 250px;
-    height: 250px;
-    border-radius: 50%;
+    width: 500px;
+
     object-fit: cover;
     object-position: center;
+}
+.content-menubis-container img {
+    display: block;
+    width: 500px;
+
+    object-fit: cover;
+    object-position: center;
+}
+#full-s {
+    display: block;
+    object-fit: cover;
+    object-position: center;
+
 }
 
 .content-menu-item {
@@ -345,7 +370,12 @@ body {
     justify-content: space-evenly;
     margin-bottom: 3rem;
 }
-
+.content-menubis-item {
+    display: flex;
+    flex: 1 1 600px;
+    justify-content: space-evenly;
+    margin-bottom: 3rem;
+}
 .content-description {
     margin: auto 1.5rem;
 }
@@ -361,8 +391,64 @@ body {
     color: #555;
     font-weight: 500;
 }
+#content-deploiement h2 {
+    text-align: center;
+    font-size: 2.5rem;
+    font-weight: 400;
+    margin-bottom: 40px;
+    text-transform: uppercase;
+    color: #555;
+}
+/* .........../Bouton pour voir les images/............ */
+
+.container_gantt {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 2rem 0; /* Ajouter de l'espace autour du conteneur */
+}
+
+/* Masquer le contenu de .toggle-content par défaut */
+.toggle-content {
+    display: none;
+    width: 100%; /* S'assure que l'image occupe tout l'espace disponible */
+    text-align: center; /* Centre le contenu */
+}
 
 
+/* Afficher le contenu si la case à cocher est cochée */
+input[type="checkbox"]:checked + label + .toggle-content {
+    display: block;
+
+}
+
+input[type="checkbox"] {
+    display: none;
+}
+
+label {
+    display: inline-block;
+    margin-top: 1rem;
+    padding: 0.5rem 1.5rem;
+    background-color: #16a083;
+    color: #fff;
+    cursor: pointer;
+    border-radius: 4px;
+    transition: background-color 0.3s ease;
+}
+
+label:hover {
+    background-color: #0056b3;
+    box-shadow: 0 4px 8px rgba(255, 255, 255, 0.3);
+}
+/* Styles pour l'image */
+.toggle-content img {
+    max-width: 100%; /* Ajuste l'image à la taille de l'écran si elle est trop grande */
+    height: auto;
+    margin-top: 20px;
+    border-radius: 8px;
+}
+/* ........./ Fin bouton Gantt /.......... */
 
 /* ........./ Contacts /.......... */
 
@@ -419,9 +505,26 @@ body {
     background: rgb(65, 65, 65);
 }
 
+/*Bouton remonter*/
+.back-to-top {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    background: #333;
+    color: white;
+    padding: 10px;
+    border-radius: 5px;
+    text-decoration: none;
+}
+
+.back-to-top:hover {
+    background: #555;
+}
+/*Bouton remonter*/
+
 /* ......../ media query /.......... */
 
-@media (max-width: 768px) {
+@media (max-width: 768px) {        <!-- Copyright -->
     .navbar {
         opacity: 0.95;
     }
@@ -563,8 +666,14 @@ body {
     .content-menu-container img {
         margin: auto;
     }
-
+    .content-menubis-container img {
+        margin: auto;
+    }
     .content-menu-item {
+        flex-direction: column;
+        text-align: center;
+    }
+    .content-menubis-item {
         flex-direction: column;
         text-align: center;
     }
@@ -605,5 +714,23 @@ body {
 @media (orientation: landscape) and (max-height: 500px) {
     .showcase-area {
         height: 50vmax;
+    }
+}
+/* Option : Ajout d'une animation douce lors du défilement */
+html {
+    scroll-behavior: smooth;
+}
+
+/* Option : Style pour section active */
+id:target {
+    animation: highlight 2s ease;
+}
+
+@keyframes highlight {
+    0% {
+        background-color: #fff3cd;
+    }
+    100% {
+        background-color: transparent;
     }
 }
