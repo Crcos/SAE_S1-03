@@ -1,6 +1,6 @@
 # SAE Interface Web 2024-2025
 
-Ce projet fait partie de la formation SAE Interface Web 2024-2025. Il est réalisé par le groupe 108, composé de **Selyan Idri** et **Mathieu San Luis**.
+Ce projet fait partie de la formation SAE Interface Web 2024-2025. Il est réalisé par le Binome_05 du groupe 108, composé de **Selyan Idri** et **Mathieu San Luis**.
 
 **Chef de module** : Laurent Giustignano  
 **Chargé de TP** : Emmanuel Paviot
